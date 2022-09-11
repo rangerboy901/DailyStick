@@ -24,22 +24,22 @@ struct ButtonView: View {
         Group {
             Circle()
                 .fill(Color(.black))
-                .frame(width: 80, height: 80, alignment: .center)
+                .frame(width: 72, height: 72, alignment: .center)
             Circle()
-                .fill(Color(.orange))
-                .frame(width: 78, height: 78, alignment: .center)
-            Circle()
-                .fill(Color(.gray))
+                .fill(Color("grey"))
                 .frame(width: 68, height: 68, alignment: .center)
+            Circle()
+                .fill(Color("blue"))
+                .frame(width: 48, height: 48, alignment: .center)
             
             Button(action: {
                 isPresented=true
             }) {
-                Image(systemName: "plus.circle.fill")
+                Image(systemName: "plus")
                     .resizable()
                     .scaledToFit()
-                    .background(Circle().fill(Color("white")))
-                    .frame(width: 48, height: 48, alignment: .center)
+                    .foregroundColor(Color("white"))
+                    .frame(width: 28, height: 28, alignment: .center)
             } //: BUTTON
             
             .sheet(isPresented: $isPresented) {

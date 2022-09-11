@@ -28,6 +28,7 @@ struct WorkoutsList: View {
                 List {
                     if let workouts = workouts {
                         ForEach(workouts) { workout in
+                            
                             NavigationLink(
                                 destination: WorkoutDetailView(workout: workout)) {
                                     WorkoutCellView(workout: workout)
@@ -37,7 +38,7 @@ struct WorkoutsList: View {
                     }
                     
                 }
-                
+               
                 //JWD:  IF NO WORKOUTS IN LIST
                 if workouts.count == 0 {
                     EmptyListView()
@@ -72,9 +73,14 @@ struct WorkoutsList: View {
                     
                     
                 }///#endOf ZStack
+                    .padding(.bottom, 15)
+                    .padding(.trailing, 15)
+                    , alignment: .bottomTrailing//Location of AddWorkout Button
+                
             )///#endOf Overlay
         }///#endOf Navigation
         .navigationBarTitle("Daily Workouts")
+        
         .navigationBarItems(
             leading:
                 Button(action: {

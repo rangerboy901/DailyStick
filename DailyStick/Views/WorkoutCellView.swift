@@ -36,12 +36,13 @@ struct WorkoutCellView: View {
                     .fontWeight(.semibold)
                     .accessibilityAddTraits(.isHeader)
                     .foregroundColor(.primary)
+                    .padding(3)
             }
             Text(workout.objective)
                 .font(.footnote)
                 .fontWeight(.semibold)
-                .foregroundColor(.black)
-                .accessibilityLabel("\(workout.objective)Workout Description")
+                .foregroundColor(Color("blue"))
+              
             
             HStack{
                 Spacer()
@@ -53,14 +54,15 @@ struct WorkoutCellView: View {
                     .overlay(
                         Capsule().stroke(self.colorize(type: workout.type ), lineWidth: 4))
                         }
-            .padding(.trailing, 15)
-            .cornerRadius(10)
+         
+          
             
         }
         .padding()
-        .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)),Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))]), startPoint: .bottom, endPoint: .top))
+    //    .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)),Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))]), startPoint: .bottom, endPoint: .top))
         .overlay(
-            RoundedRectangle(cornerSize: .zero).stroke(self.colorize(type: workout.type ), lineWidth: 5.0))
+            RoundedRectangle(cornerSize: CGSize(width: 20, height: 40)).stroke(self.colorize(type: workout.type ), lineWidth: 5.0))
+        
     }
 }
 
