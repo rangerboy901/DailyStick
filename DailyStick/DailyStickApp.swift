@@ -11,7 +11,9 @@ import SwiftUI
 struct DailyStickApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                WorkoutsList()
+            }
         }
     }
 }

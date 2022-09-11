@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A361CEF28CD3C7000D6AD2C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A361CEE28CD3C7000D6AD2C /* MenuView.swift */; };
+		4A361CF128CD853E00D6AD2C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A361CF028CD853E00D6AD2C /* ButtonView.swift */; };
 		4A77C0D328C6D8DC00FD249E /* DailyStickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C0D228C6D8DC00FD249E /* DailyStickApp.swift */; };
 		4A77C0D528C6D8DC00FD249E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C0D428C6D8DC00FD249E /* ContentView.swift */; };
 		4A77C0D728C6D8DC00FD249E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A77C0D628C6D8DC00FD249E /* Assets.xcassets */; };
@@ -14,6 +16,23 @@
 		4A77C0E428C6D8DD00FD249E /* DailyStickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C0E328C6D8DD00FD249E /* DailyStickTests.swift */; };
 		4A77C0EE28C6D8DD00FD249E /* DailyStickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C0ED28C6D8DD00FD249E /* DailyStickUITests.swift */; };
 		4A77C0F028C6D8DD00FD249E /* DailyStickUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C0EF28C6D8DD00FD249E /* DailyStickUITestsLaunchTests.swift */; };
+		4A77C0FE28C6D96D00FD249E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C0FD28C6D96D00FD249E /* Theme.swift */; };
+		4A77C10028C6DB0F00FD249E /* WorkoutHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C0FF28C6DB0F00FD249E /* WorkoutHistory.swift */; };
+		4A77C10328C6DC0100FD249E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4A77C10228C6DC0100FD249E /* Realm */; };
+		4A77C10528C6DC0100FD249E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A77C10428C6DC0100FD249E /* RealmSwift */; };
+		4A77C10728C6DC3500FD249E /* DailyWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10628C6DC3500FD249E /* DailyWorkout.swift */; };
+		4A77C10928C6DCC100FD249E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10828C6DCC100FD249E /* Color.swift */; };
+		4A77C10B28C6DD2700FD249E /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10A28C6DD2700FD249E /* ClockModel.swift */; };
+		4A77C10E28C6DD7000FD249E /* WorkoutsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10D28C6DD7000FD249E /* WorkoutsList.swift */; };
+		4A77C11028C6DDAF00FD249E /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10F28C6DDAF00FD249E /* WorkoutDetailView.swift */; };
+		4A77C11228C6DDD900FD249E /* WorkoutTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C11128C6DDD900FD249E /* WorkoutTimerView.swift */; };
+		4A77C11428C6DE6100FD249E /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C11328C6DE6100FD249E /* Clock.swift */; };
+		4A77C11628C6DEA100FD249E /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C11528C6DEA100FD249E /* History.swift */; };
+		4A77C11828C6DED400FD249E /* WorkoutEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C11728C6DED400FD249E /* WorkoutEditView.swift */; };
+		4A77C11A28C6DF1E00FD249E /* WorkoutCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C11928C6DF1E00FD249E /* WorkoutCellView.swift */; };
+		4A77C11D28C6F51500FD249E /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C11C28C6F51500FD249E /* HapticManager.swift */; };
+		4A77C12128C8309600FD249E /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C12028C8309600FD249E /* EmptyListView.swift */; };
+		4A77C12328C8317600FD249E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A77C12228C8317600FD249E /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A361CEE28CD3C7000D6AD2C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		4A361CF028CD853E00D6AD2C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4A77C0CF28C6D8DC00FD249E /* DailyStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A77C0D228C6D8DC00FD249E /* DailyStickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStickApp.swift; sourceTree = "<group>"; };
 		4A77C0D428C6D8DC00FD249E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +65,21 @@
 		4A77C0E928C6D8DD00FD249E /* DailyStickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyStickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A77C0ED28C6D8DD00FD249E /* DailyStickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStickUITests.swift; sourceTree = "<group>"; };
 		4A77C0EF28C6D8DD00FD249E /* DailyStickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStickUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A77C0FD28C6D96D00FD249E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		4A77C0FF28C6DB0F00FD249E /* WorkoutHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistory.swift; sourceTree = "<group>"; };
+		4A77C10628C6DC3500FD249E /* DailyWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkout.swift; sourceTree = "<group>"; };
+		4A77C10828C6DCC100FD249E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4A77C10A28C6DD2700FD249E /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
+		4A77C10D28C6DD7000FD249E /* WorkoutsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsList.swift; sourceTree = "<group>"; };
+		4A77C10F28C6DDAF00FD249E /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		4A77C11128C6DDD900FD249E /* WorkoutTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerView.swift; sourceTree = "<group>"; };
+		4A77C11328C6DE6100FD249E /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		4A77C11528C6DEA100FD249E /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		4A77C11728C6DED400FD249E /* WorkoutEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutEditView.swift; sourceTree = "<group>"; };
+		4A77C11928C6DF1E00FD249E /* WorkoutCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCellView.swift; sourceTree = "<group>"; };
+		4A77C11C28C6F51500FD249E /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		4A77C12028C8309600FD249E /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		4A77C12228C8317600FD249E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A77C10528C6DC0100FD249E /* RealmSwift in Frameworks */,
+				4A77C10328C6DC0100FD249E /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +112,7 @@
 		4A77C0C628C6D8DC00FD249E = {
 			isa = PBXGroup;
 			children = (
+				4A77C12228C8317600FD249E /* Launch Screen.storyboard */,
 				4A77C0D128C6D8DC00FD249E /* DailyStick */,
 				4A77C0E228C6D8DD00FD249E /* DailyStickTests */,
 				4A77C0EC28C6D8DD00FD249E /* DailyStickUITests */,
@@ -94,8 +133,10 @@
 		4A77C0D128C6D8DC00FD249E /* DailyStick */ = {
 			isa = PBXGroup;
 			children = (
+				4A77C11B28C6F4F600FD249E /* Managers */,
+				4A77C0FC28C6D95300FD249E /* Models */,
 				4A77C0D228C6D8DC00FD249E /* DailyStickApp.swift */,
-				4A77C0D428C6D8DC00FD249E /* ContentView.swift */,
+				4A77C10C28C6DD4200FD249E /* Views */,
 				4A77C0D628C6D8DC00FD249E /* Assets.xcassets */,
 				4A77C0D828C6D8DC00FD249E /* Preview Content */,
 			);
@@ -127,6 +168,44 @@
 			path = DailyStickUITests;
 			sourceTree = "<group>";
 		};
+		4A77C0FC28C6D95300FD249E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A77C0FD28C6D96D00FD249E /* Theme.swift */,
+				4A77C0FF28C6DB0F00FD249E /* WorkoutHistory.swift */,
+				4A77C10628C6DC3500FD249E /* DailyWorkout.swift */,
+				4A77C10828C6DCC100FD249E /* Color.swift */,
+				4A77C10A28C6DD2700FD249E /* ClockModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A77C10C28C6DD4200FD249E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A77C0D428C6D8DC00FD249E /* ContentView.swift */,
+				4A77C10D28C6DD7000FD249E /* WorkoutsList.swift */,
+				4A77C10F28C6DDAF00FD249E /* WorkoutDetailView.swift */,
+				4A77C11128C6DDD900FD249E /* WorkoutTimerView.swift */,
+				4A77C11328C6DE6100FD249E /* Clock.swift */,
+				4A77C11528C6DEA100FD249E /* History.swift */,
+				4A77C11728C6DED400FD249E /* WorkoutEditView.swift */,
+				4A77C11928C6DF1E00FD249E /* WorkoutCellView.swift */,
+				4A77C12028C8309600FD249E /* EmptyListView.swift */,
+				4A361CEE28CD3C7000D6AD2C /* MenuView.swift */,
+				4A361CF028CD853E00D6AD2C /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A77C11B28C6F4F600FD249E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4A77C11C28C6F51500FD249E /* HapticManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +222,10 @@
 			dependencies = (
 			);
 			name = DailyStick;
+			packageProductDependencies = (
+				4A77C10228C6DC0100FD249E /* Realm */,
+				4A77C10428C6DC0100FD249E /* RealmSwift */,
+			);
 			productName = DailyStick;
 			productReference = 4A77C0CF28C6D8DC00FD249E /* DailyStick.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +298,9 @@
 				Base,
 			);
 			mainGroup = 4A77C0C628C6D8DC00FD249E;
+			packageReferences = (
+				4A77C10128C6DC0100FD249E /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 4A77C0D028C6D8DC00FD249E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A77C12328C8317600FD249E /* Launch Screen.storyboard in Resources */,
 				4A77C0DA28C6D8DC00FD249E /* Preview Assets.xcassets in Resources */,
 				4A77C0D728C6D8DC00FD249E /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +344,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A77C10028C6DB0F00FD249E /* WorkoutHistory.swift in Sources */,
+				4A77C11D28C6F51500FD249E /* HapticManager.swift in Sources */,
+				4A77C11028C6DDAF00FD249E /* WorkoutDetailView.swift in Sources */,
+				4A77C0FE28C6D96D00FD249E /* Theme.swift in Sources */,
+				4A77C12128C8309600FD249E /* EmptyListView.swift in Sources */,
+				4A77C10B28C6DD2700FD249E /* ClockModel.swift in Sources */,
+				4A77C11228C6DDD900FD249E /* WorkoutTimerView.swift in Sources */,
+				4A361CEF28CD3C7000D6AD2C /* MenuView.swift in Sources */,
+				4A361CF128CD853E00D6AD2C /* ButtonView.swift in Sources */,
 				4A77C0D528C6D8DC00FD249E /* ContentView.swift in Sources */,
+				4A77C11628C6DEA100FD249E /* History.swift in Sources */,
 				4A77C0D328C6D8DC00FD249E /* DailyStickApp.swift in Sources */,
+				4A77C11A28C6DF1E00FD249E /* WorkoutCellView.swift in Sources */,
+				4A77C10728C6DC3500FD249E /* DailyWorkout.swift in Sources */,
+				4A77C10928C6DCC100FD249E /* Color.swift in Sources */,
+				4A77C11828C6DED400FD249E /* WorkoutEditView.swift in Sources */,
+				4A77C10E28C6DD7000FD249E /* WorkoutsList.swift in Sources */,
+				4A77C11428C6DE6100FD249E /* Clock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +526,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,6 +556,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,6 +688,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A77C10128C6DC0100FD249E /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A77C10228C6DC0100FD249E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A77C10128C6DC0100FD249E /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		4A77C10428C6DC0100FD249E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A77C10128C6DC0100FD249E /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A77C0C728C6D8DC00FD249E /* Project object */;
 }
