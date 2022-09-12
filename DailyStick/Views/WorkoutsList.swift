@@ -49,8 +49,9 @@ struct WorkoutsList: View {
                     WorkoutEditView(workoutData: $newWorkoutData, workout: workout)
                         .navigationBarItems(leading: Button("Cancel"){
                             HapticManager.notification(type: .success)
-                            isPresented = false
                             
+                            isPresented = false///Dismiss
+                           
                         }, trailing: Button("Save") {
                             HapticManager.notification(type: .success)
                             let newWorkout = DailyWorkout(
@@ -68,6 +69,7 @@ struct WorkoutsList: View {
             }
             .overlay(
                 ZStack{
+                    ///Button:   Add Workout: EditView
                     ButtonView()
                         .padding(.bottom, 15)
                     
@@ -78,8 +80,10 @@ struct WorkoutsList: View {
                     , alignment: .bottomTrailing//Location of AddWorkout Button
                 
             )///#endOf Overlay
+                   .navigationBarTitle("Daily Workouts")
+
         }///#endOf Navigation
-        .navigationBarTitle("Daily Workouts")
+        
         
         .navigationBarItems(
             leading:

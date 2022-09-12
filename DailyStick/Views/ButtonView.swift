@@ -23,14 +23,14 @@ struct ButtonView: View {
         
         Group {
             Circle()
-                .fill(Color(.black))
+                .fill(Color("white"))
                 .frame(width: 72, height: 72, alignment: .center)
             Circle()
                 .fill(Color("grey"))
-                .frame(width: 68, height: 68, alignment: .center)
+                .frame(width: 70, height: 70, alignment: .center)
             Circle()
                 .fill(Color("blue"))
-                .frame(width: 48, height: 48, alignment: .center)
+                .frame(width: 65, height: 65, alignment: .center)
             
             Button(action: {
                 isPresented=true
@@ -61,13 +61,12 @@ struct ButtonView: View {
                             isPresented = false
                         })
                     
+                    
+                    
                 }
-                
-                
             }
         }
     }
-    
 }
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {

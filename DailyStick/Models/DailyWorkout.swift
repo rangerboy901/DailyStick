@@ -7,15 +7,20 @@
 
 import RealmSwift
 import SwiftUI
+import Foundation
 
 
+///JWD:   Specific data types in Realm must be initialized with a value. Will initialize with an empty string.
 class DailyWorkout: Object, ObjectKeyIdentifiable {
+   
     @Persisted var title = ""
     @Persisted var objective = ""
     @Persisted var type = ""
     @Persisted var exerciseList = RealmSwift.List<String>()
     @Persisted var colorComponents: Components?
     @Persisted var historyList = RealmSwift.List<History>()
+    
+    
     
     var color: Color { Color(colorComponents ?? Components()) }
     var exercises: [String] { Array(exerciseList) }

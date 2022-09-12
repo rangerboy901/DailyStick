@@ -15,23 +15,6 @@ struct WorkoutEditView: View {
     @ObservedRealmObject var workout: DailyWorkout
     let types = ["HIIT", "Cardio", "Strength", "Power"]
     
-  
-    func colorize(type: String) -> Color {
-        switch type {
-        case "HIIT":
-            return .blue
-        case "Strength":
-            return .orange
-        case "Cardio":
-            return .pink
-        case "Power":
-            return .green
-        default:
-            return .gray
-            
-        }
-    }
-    
     var body: some View {
         VStack (alignment:.leading){
             List {
@@ -102,6 +85,21 @@ struct WorkoutEditView: View {
             }
         }
         
+    }
+    func colorize(type: String) -> Color {
+        switch type {
+        case "HIIT":
+            return .blue
+        case "Strength":
+            return .orange
+        case "Cardio":
+            return .pink
+        case "Power":
+            return .green
+        default:
+            return .gray
+            
+        }
     }
 }
                                     
