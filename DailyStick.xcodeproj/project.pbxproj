@@ -20,7 +20,6 @@
 		4A77C10328C6DC0100FD249E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4A77C10228C6DC0100FD249E /* Realm */; };
 		4A77C10528C6DC0100FD249E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A77C10428C6DC0100FD249E /* RealmSwift */; };
 		4A77C10728C6DC3500FD249E /* DailyWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10628C6DC3500FD249E /* DailyWorkout.swift */; };
-		4A77C10928C6DCC100FD249E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10828C6DCC100FD249E /* Color.swift */; };
 		4A77C10B28C6DD2700FD249E /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10A28C6DD2700FD249E /* ClockModel.swift */; };
 		4A77C10E28C6DD7000FD249E /* WorkoutsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10D28C6DD7000FD249E /* WorkoutsList.swift */; };
 		4A77C11028C6DDAF00FD249E /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A77C10F28C6DDAF00FD249E /* WorkoutDetailView.swift */; };
@@ -67,7 +66,6 @@
 		4A77C0EF28C6D8DD00FD249E /* DailyStickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStickUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4A77C0FF28C6DB0F00FD249E /* WorkoutHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistory.swift; sourceTree = "<group>"; };
 		4A77C10628C6DC3500FD249E /* DailyWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkout.swift; sourceTree = "<group>"; };
-		4A77C10828C6DCC100FD249E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4A77C10A28C6DD2700FD249E /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
 		4A77C10D28C6DD7000FD249E /* WorkoutsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsList.swift; sourceTree = "<group>"; };
 		4A77C10F28C6DDAF00FD249E /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			children = (
 				4A77C0FF28C6DB0F00FD249E /* WorkoutHistory.swift */,
 				4A77C10628C6DC3500FD249E /* DailyWorkout.swift */,
-				4A77C10828C6DCC100FD249E /* Color.swift */,
 				4A77C10A28C6DD2700FD249E /* ClockModel.swift */,
 			);
 			path = Models;
@@ -356,7 +353,6 @@
 				4A77C0D328C6D8DC00FD249E /* DailyStickApp.swift in Sources */,
 				4A77C11A28C6DF1E00FD249E /* WorkoutCellView.swift in Sources */,
 				4A77C10728C6DC3500FD249E /* DailyWorkout.swift in Sources */,
-				4A77C10928C6DCC100FD249E /* Color.swift in Sources */,
 				4A77C11828C6DED400FD249E /* WorkoutEditView.swift in Sources */,
 				4A77C10E28C6DD7000FD249E /* WorkoutsList.swift in Sources */,
 				4A77C11428C6DE6100FD249E /* Clock.swift in Sources */,
@@ -516,7 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DailyStick/Preview Content\"";
 				DEVELOPMENT_TEAM = W59W3QVKXJ;
 				ENABLE_PREVIEWS = YES;
@@ -531,7 +527,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sigmatech.daily-workout.DailyStick";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -546,7 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DailyStick/Preview Content\"";
 				DEVELOPMENT_TEAM = W59W3QVKXJ;
 				ENABLE_PREVIEWS = YES;
@@ -561,7 +557,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sigmatech.daily-workout.DailyStick";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

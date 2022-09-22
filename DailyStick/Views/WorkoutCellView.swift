@@ -33,15 +33,16 @@ struct WorkoutCellView: View {
             HStack {
     
                 Text(workout.title)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
+                    .font(.title2)
                     .accessibilityAddTraits(.isHeader)
-                    .foregroundColor(.primary)
+                    .foregroundColor(self.colorize(type: workout.type ))
                     .padding(3)
             }
             Text(workout.objective)
                 .font(.footnote)
                 .fontWeight(.semibold)
-                .foregroundColor(self.colorize(type: workout.type ))
+                .foregroundColor(.primary)
               
             
             HStack{
@@ -54,14 +55,15 @@ struct WorkoutCellView: View {
                     .overlay(
                         Capsule().stroke(self.colorize(type: workout.type ), lineWidth: 4))
                         }
-         
+            .padding()
+
           
             
         }
         .padding()
     //    .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)),Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))]), startPoint: .bottom, endPoint: .top))
         .overlay(
-            RoundedRectangle(cornerSize: CGSize(width: 20, height: 40)).stroke(self.colorize(type: workout.type ), lineWidth: 5.0))
+            RoundedRectangle(cornerSize: CGSize(width: 49, height: 50)).stroke(self.colorize(type: workout.type ), lineWidth: 5.0))
         
     }
 }
@@ -69,7 +71,7 @@ struct WorkoutCellView: View {
 struct WorkoutCellView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            WorkoutCellView(workout: DailyWorkout(title: "Dakota", objective: "complete as Rx'd", type: "HIIT", exercises: ["push-ups"], color: .blue))
+            WorkoutCellView(workout: DailyWorkout(title: "Dakota", objective: "complete as Rx'd", timeGoal: 45, type: "HIIT", exercises: ["push-ups"]))
         }
     }
 }

@@ -22,15 +22,10 @@ struct ButtonView: View {
     var body: some View {
         
         Group {
-            Circle()
-                .fill(Color("white"))
-                .frame(width: 72, height: 72, alignment: .center)
-            Circle()
-                .fill(Color("grey"))
-                .frame(width: 70, height: 70, alignment: .center)
+            
             Circle()
                 .fill(Color("blue"))
-                .frame(width: 65, height: 65, alignment: .center)
+                .frame(width: 70, height: 70, alignment: .bottom)
             
             Button(action: {
                 isPresented=true
@@ -40,23 +35,27 @@ struct ButtonView: View {
                     .scaledToFit()
                     .foregroundColor(Color("white"))
                     .frame(width: 28, height: 28, alignment: .center)
+                    
             } //: BUTTON
             
+            .padding(.bottom, 20)
             .sheet(isPresented: $isPresented) {
-                NavigationView {
+               
                     WorkoutEditView(workoutData: $newWorkoutData, workout: workout)
                         .navigationBarItems(leading: Button("Cancel"){
                             HapticManager.notification(type: .success)
                             isPresented = false
                             
-                        }, trailing: Button("Save") {
+                        },
+                                            
+                        trailing: Button("Save") {
                             HapticManager.notification(type: .success)
                             let newWorkout = DailyWorkout(
                                 title: newWorkoutData.title,
-                                objective: newWorkoutData.objective,
+                                objective: newWorkoutData.objective, timeGoal: Int(newWorkoutData.timeGoal),
                                 type: newWorkoutData.type,
-                                exercises: newWorkoutData.exercises,
-                                color: newWorkoutData.color)
+                                exercises: newWorkoutData.exercises)
+                               
                             $workouts.append(newWorkout)
                             isPresented = false
                         })
@@ -65,9 +64,10 @@ struct ButtonView: View {
                     
                 }
             }
+      
         }
     }
-}
+
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonView()

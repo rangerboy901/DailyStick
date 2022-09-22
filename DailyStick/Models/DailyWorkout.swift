@@ -15,27 +15,27 @@ class DailyWorkout: Object, ObjectKeyIdentifiable {
    
     @Persisted var title = ""
     @Persisted var objective = ""
+    @Persisted var timeGoal = 47
     @Persisted var type = ""
     @Persisted var exerciseList = RealmSwift.List<String>()
-    @Persisted var colorComponents: Components?
     @Persisted var historyList = RealmSwift.List<History>()
     
     
     
-    var color: Color { Color(colorComponents ?? Components()) }
     var exercises: [String] { Array(exerciseList) }
     var history: [History] { Array(historyList) }
     static let shared = DailyWorkout()
     let types = ["Strength", "Power", "Cardio", "HIIT", "Recover"]
     
     var workouts: String = ""
-    convenience init(title: String,objective: String,type: String, exercises: [String], color: Color, history: [History] = []) {
+    convenience init(title: String,objective: String, timeGoal: Int, type: String, exercises: [String], history: [History] = []) {
         self.init()
         self.title = title
         self.objective = objective
+        self.timeGoal = timeGoal
         self.type = type
         exerciseList.append(objectsIn: exercises)
-        self.colorComponents = color.components
+       
         for entry in history {
             self.historyList.insert(entry, at: 0)
         }
@@ -45,10 +45,10 @@ class DailyWorkout: Object, ObjectKeyIdentifiable {
 extension DailyWorkout {
     static var data: [DailyWorkout] {
         [
-            DailyWorkout(title: "Dakota", objective: "Complete for Time.", type: "HIIT", exercises: ["Run 1 Mile","100 Push-Ups", "100 Pull-ups", "100 Sit-ups"], color: Color("HIIT")),
-            DailyWorkout(title: "Remington", objective: "Complete for Time.", type: "Power", exercises: ["Run 1 Mile","100 Push-Ups", "100 Pull-ups", "100 Sit-ups"], color: Color("Power")),
-            DailyWorkout(title: "Montana", objective: "Complete for Time.", type: "Strength", exercises:[ "Run 1 Mile","100 Push-Ups", "100 Pull-ups", "100 Sit-ups"], color: Color("Strength")),
-            DailyWorkout(title: "Cooper", objective: "Complete for Time.", type: "Cardio", exercises: ["Run 1 Mile","100 Push-Ups", "100 Pull-ups", "100 Sit-ups"], color: Color("Cardio")),
+            DailyWorkout(title: "Dakota", objective: "Complete for Time.", timeGoal: 58, type: "HIIT", exercises: ["Run 1 Mile","100 Push-Ups", "100 Pull-ups", "100 Sit-ups"]),
+            DailyWorkout(title: "Remington", objective: "Complete for Time.", timeGoal: 56, type: "Power", exercises: ["Run 1 Mile","100 Push-Ups", "100 Pull-ups", "100 Sit-ups"]),
+            DailyWorkout(title: "Montana", objective: "Complete for Time.", timeGoal: 57, type: "Strength", exercises:[ "Run 1 Mile","100 Push-Ups", "100 Pull-ups", "100 Sit-ups"]),
+            DailyWorkout(title: "Cooper", objective: "Complete for Time.", timeGoal: 43, type: "Cardio", exercises: ["Run 1 Mile","100 Push-Ups", "100 Pull-ups", "100 Sit-ups"]),
         ]
     }
 }
@@ -57,11 +57,12 @@ extension DailyWorkout {
         var title: String = ""
         var objective: String = ""
         var type: String = ""
+        var timeGoal: Double = 47.0
         var exercises: [String] = []
-        var color: Color = .random
+       
     }
     var data: Data {
-        return Data(title: title, objective: objective, type: type, exercises: exercises, color: color)
+        return Data(title: title, objective: objective, type: type, timeGoal: Double(timeGoal), exercises: exercises)
     }
     
     func update(from data: Data) {
@@ -73,8 +74,8 @@ extension DailyWorkout {
                 self.exerciseList.append(exercise)
             }
         }
-        
-        colorComponents = data.color.components
+        timeGoal = Int(data.timeGoal)
+      
     }
 }
 

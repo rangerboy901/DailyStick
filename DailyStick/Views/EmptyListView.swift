@@ -13,11 +13,11 @@ struct EmptyListView: View {
         ZStack{
             VStack{
                 
-                Image("Grayscale_Transparent_NoBuffer")
+                Image("frog")
                     .renderingMode(.template)
                     .resizable()
-                    .scaledToFit()
-                    .frame(minWidth: 256, idealWidth: 280, maxWidth: 360, minHeight: 256, idealHeight: 280, maxHeight: 360, alignment: .center)
+                    .scaledToFill()
+              //      .frame(minWidth: 256, idealWidth: 280, maxWidth: 360, minHeight: 256, idealHeight: 280, maxHeight: 360, alignment: .center)
                     .layoutPriority(1)
             }
         }
